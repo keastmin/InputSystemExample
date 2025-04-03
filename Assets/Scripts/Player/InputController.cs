@@ -9,12 +9,8 @@ public class InputController : MonoBehaviour
     // 테스트
     private InputAction interact;
 
-
-    private InputAction moveAction;
-
     void Start()
     {
-        moveAction = InputSystem.actions.FindAction("Move");
         if (TryGetComponent(out playerInput))
         {
             BindKey();
@@ -23,10 +19,6 @@ public class InputController : MonoBehaviour
 
     void Update()
     {
-        Vector2 moveValue = moveAction.ReadValue<Vector2>();
-        Debug.Log(moveValue.ToString());
-
-
         if (interact != null)
         {
             Debug.Log($"Interact Phase: {interact.phase}");
@@ -45,14 +37,6 @@ public class InputController : MonoBehaviour
 
     private void BindKey()
     {
-        interact = playerInput.actions.FindAction("Interact");
-
-        if (interact == null)
-        {
-            Debug.LogError("❌ 'Interact' 액션을 찾지 못했습니다.");
-            return;
-        }
-
-        interact.Enable(); // 명시적으로 Enable
+        interact = playerInput.actions.FindAction("Interaction");
     }
 }

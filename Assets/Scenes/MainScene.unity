@@ -525,8 +525,6 @@ MonoBehaviour:
       Input:
         InputAction: {fileID: 0}
         Gain: 1
-        LegacyInput: Mouse X
-        LegacyGain: 100
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -538,8 +536,6 @@ MonoBehaviour:
       Input:
         InputAction: {fileID: 0}
         Gain: 1
-        LegacyInput: Mouse Y
-        LegacyGain: -100
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -551,8 +547,6 @@ MonoBehaviour:
       Input:
         InputAction: {fileID: 0}
         Gain: 1
-        LegacyInput: Mouse ScrollWheel
-        LegacyGain: -100
         CancelDeltaTime: 0
       InputValue: 0
       Driver:
@@ -1241,12 +1235,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1888216925}
   - component: {fileID: 1888216930}
-  - component: {fileID: 1888216933}
+  - component: {fileID: 1888216932}
   - component: {fileID: 1888216929}
   - component: {fileID: 1888216928}
   - component: {fileID: 1888216927}
   - component: {fileID: 1888216926}
-  - component: {fileID: 1888216932}
+  - component: {fileID: 1888216931}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1367,7 +1361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e3a10650c58d64dba37b4001eddf87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1888216932
+--- !u!114 &1888216931
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1379,7 +1373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: e42021c632c45444183b91a8c55e97e3, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: d30f9f30437ac764c8840edd061db491, type: 3}
   m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -1393,11 +1387,11 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: PC
-  m_DefaultActionMap: Player
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: PlayerAction
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1888216933
+--- !u!114 &1888216932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
